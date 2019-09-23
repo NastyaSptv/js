@@ -69,7 +69,55 @@ switch (event) {
 		}while (!ok);
 		switch (event) {
 //---------------------------------------------------------------------------
-		
-		}
+		case 1:
+			do {
+				ok = false;
+				event = +prompt(works.d00 + works.d1 + works.d2 + '-1 - Выход из игры');
+				if (event == -1) {
+					break;
+				}
+				else {
+					ok = isAnswer(works.d0, event);
+				}
+			} while (!ok);
 
+			break;
+			case 2:
+				do {
+					ok = false;
+					event = +prompt(works.d00 + works.d1 + works.d2 + '-1 - Выход из игры');
+					if (event == -1) {
+						break;
+					}
+					else {
+						ok = isAnswer(works.d0, event);
+					}
+				} while (!ok);
+
+				break;
+				case -1:
+				break;
+				default:
+				alert('Ошибка');
+		}
+		break;
+		case -1:
+		break;
+		default:
+		alert('Ошибка');
+}
+alert('Спасибо за игру');
+//-------------------------------------------------------------------------------
+function isAnswer(q, event) {
+	if (isNaN(event) || !isFinite(event)) {
+		alert('Вы ввели недопустимый символ');
+		return false;
+	}
+	else if (event < 1 || event > q) {
+		alert('Ваше число выходит из допустимого диапозона');
+		return false;
+	}
+	else {
+		return true;
+	}
 }

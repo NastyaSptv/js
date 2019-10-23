@@ -7,7 +7,7 @@ $(function() {
 	var navBtn = $('.slide-nav');
 
 	navBtn.click(function() {
-		navBtn = &(this).index();
+		navBtn = $(this).index();
 		$('.active').removeClass('active');
 		$(this).toggleClass('active');
 		if (navBtn + 1 != slideNow) {

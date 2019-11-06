@@ -37,12 +37,12 @@ function addToCart() {
 
 function saveCart() {
 
-	localStorage.setItem('cart,' JSON.stringify(cart));
+	localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 function showMiniCart() {
 
-	varout="";
+	var out="";
 	for (var key in cart) {
 		out += key +' --- '+ cart[key]+'<br>';
 	}

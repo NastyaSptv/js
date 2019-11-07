@@ -26,5 +26,19 @@
 		"description": "Сладкий красный",
 		"order": 8,
 		"img" : "watermelon.png"
+	},
+	"1238": {
+		"name": "дубина",
+		"cost": 4.1,
+		"description": "Сладкий красный",
+		"order": 2,
+		"img" : "stick.png"
+	},
+	"1239": {
+		"name": "мяч",
+		"cost": 10,
+		"description": "Круглый прыгучий",
+		"order": 4,
+		"img" : "ball.png"
 	}
 }

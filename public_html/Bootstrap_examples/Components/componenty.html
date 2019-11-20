@@ -413,9 +413,283 @@
 
 
 	<h3>Paginacija formi</h3>
-			
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="form-group row">
+						<label class="col-3" for="exampleInputEmail1">Email Adress</label>
+						<input type="email" class="form-control col-9" id="exampleInputEmaill" aria-describedy="emailHelp" placeholder="Emal Adress">
+						<small id="emailHelp" class="col-9 offset-3">Mi nikogda ne budem delitsja vashei elektronoq po4toe s kem libo esho</small>
+					</div>
+					<div class="form-group row">
+						<label class="col-3" for="exampleInputEmail1">Parol</label>
+						<input readonly type="password" class="form-control col-9" id="exampleInputPassword1" placeholder="Paroli">
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Example select</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+					<div class="form-row">
+
+					<div class="form-check-inline">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1" disabled>
+						<label class="form-check-label" for="exampleCheck1">1</label>
+					</div>
+					<div class="form-check-inline">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">2</label>
+					</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<h3>input groyp</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="input-group mb-3">
+						<input type="email" class="form-control" placeholder="Email Adress" aria-describedy="basic-addon1">
+						<div class="input-group-append">
+							<button type="button" class="btn btn-primary">nasha knopka</button>
+							<button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">nasha knopka</button>
+							<div class="dropdown-menu">
+								<div class="dropdown-item">menu</div>
+								<div class="dropdown-item">menu</div>
+								<div class="dropdown-item">menu</div>
+								<div class="dropdown-item">menu</div>
+							</div>
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<input type="password" class="form-control" placeholder="Porol" aria-describedy="basic-addon2">
+						<div class="input-group-append">
+						<span class="input-group-text" id="basic-addon2">@example.com</span>
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<div class="input-group-text">
+							<input type="checkbox" aria-label="Checkbox for following text input">
+						</div>
+					</div>
+					<input type="text" class="form-control" aria-label="Checkbox for following text input">
+				</div>
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<div class="input-group-text">
+							4to-to tam
+						</div>
+					</div>
+					<input type="text" class="form-control">
+					<input type="text" class="form-control">
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<h3>Navigacia navbar</h3>
+<div class="conteiner">
+	<div class="row">
+		<div class="col-12">
+			<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">Navbar</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Disabled</a>
+						</li>
+					</ul>
+					<from class="form-inline m1-auto">
+						<input class="form-control" type="search" placeholder="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</from>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<div class="row">
+				<div class="col-3">
+					<nav class="nav flex-column nav-pills">
+						<a class="nav-item nav-link active" id="nav1-1" data-toggle="tab" aria-controls="tabl-1" href="#tabl-1">Active</a>
+						<a class="nav-item nav-link" id="nav1-2" data-toggle="tab" aria-controls="tabl-2" href="#tabl-2">Link</a>
+						<a class="nav-item nav-link" id="nav1-3" data-toggle="tab" aria-controls="tabl-3" href="#tabl-3">Link</a>
+					</nav>
+				</div>
+				<div class="col-9">
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="tab1-1" aria-labelledby="nav1-1">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, optio rerum qui amet ratione, nesciunt totam perspiciatis eos impedit officiis. Accusamus, blanditiis, atque? Incidunt debitis culpa recusandae non et quas.</div>
+						<div class="tab-pane fade" id="tab1-2" aria-labelledby="nav1-2">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, optio rerum qui amet ratione, nesciunt totam perspiciatis eos impedit officiis. Accusamus, blanditiis, atque? Incidunt debitis culpa recusandae non et quas.</div>
+						<div class="tab-pane fade" id="tab1-3" aria-labelledby="nav1-3">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, optio rerum qui amet ratione, nesciunt totam perspiciatis eos impedit officiis. Accusamus, blanditiis, atque? Incidunt debitis culpa recusandae non et quas.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12">
+			<ul class="nav nav-fill nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" id="nav2-1" data-toggle="tab" aria-controls="tab2-1" href="#tab2-1">Active</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="nav2-2" data-toggle="tab" aria-controls="tab2-2" href="#tab2-2">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="nav2-3" data-toggle="tab" aria-controls="tab2-3" href="#tab2-3">Link</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+						<div class="tab-pane fade show active" id="tab2-1" aria-labelledby="nav2-1">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, optio rerum qui amet ratione, nesciunt totam perspiciatis eos impedit officiis. Accusamus, blanditiis, atque? Incidunt debitis culpa recusandae non et quas.</div>
+						<div class="tab-pane fade" id="tab2-2" aria-labelledby="nav2-2">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, optio rerum qui amet ratione, nesciunt totam perspiciatis eos impedit officiis. Accusamus, blanditiis, atque? Incidunt debitis culpa recusandae non et quas.</div>
+						<div class="tab-pane fade" id="tab2-3" aria-labelledby="nav2-3">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, optio rerum qui amet ratione, nesciunt totam perspiciatis eos impedit officiis. Accusamus, blanditiis, atque? Incidunt debitis culpa recusandae non et quas.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<h3>Podskazki</h3>
+	<div class="container">
+		<div class="row">
+			<div claa="col-12">
+				<button Style="margin-left: 300px;" type="button" class="btn btn-lg btn-danger" data-placement="bottom" data-toggle="tolltip" title="Name popover" dara-content="And here`s some amazing content. It`s very engaging. Right?">Click to toggle popover</button>
+
+				<span class="" data-toggle="tooltip" title="Name popover" data-content="Disabled popover">
+					<button class="btn btn-primary" type="button">Disabled button</button>
+				</span>
+			</div>
+		</div>
+	</div>
+
+
+	<h3>Progress Bar</h3>
+	<div class="container">
+		<div class="row">
+			<div claa="col-12">
+				<div class="progress mb-2" style="height: 30px;">
+					<div class="progress-bar bg-warning progress-bar-striped" style="width: 45%" >45%</div>
+				</div>
+				<div class="progress mb-2" style="height: 50px;">
+					<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 10%" >10%</div>
+					<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 20%" >20%</div>
+					<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 45%" >45%</div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 20%" >20%</div>
+				</div>
+				<div class="progress" style="height: 155px;">
+					<div class="progress-bar progress-bar-striped" style="width: 85%" >85%</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<h3>Skroling</h3>
+	<div class="container">
+		<div class="row">
+			<div claa="col-12">
+				<nav id="novbar-example2" class="navbar navbar-light bg-light">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link" href="#fat">@fat</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#mdo">@mdo</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Dropdown</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#one">one</a>
+								<a class="dropdown-item" href="#two">two</a>
+								<div role="separator" class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#three">three</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<div data-spy="scroll" data-target="#navbar-example2"
+					style="position: relative;
+					height: 400px;
+					overflow: auto;">
+					<h4 id="fat">@fat</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro libero quisquam rerum esse sed, beatae in eaque incidunt deleniti numquam nemo maiores veritatis possimus amet veniam! Error labore accusantium, at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque totam possimus magnam vero molestiae repellendus voluptatum aut illum, quibusdam voluptas cupiditate atque nesciunt, rerum eum officiis aspernatur reiciendis aliquam mollitia.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem culpa veritatis dolore vero odio eveniet. Tenetur voluptatibus praesent</p>
+					<h4 id="mdo">@mdo</h4>
+					<p>quo vero iste cumque sapiente inventore, perferendis, nihil sed voluptates molestiae nostrum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia explicabo nesciunt minus quis voluptate necessitatibus, ex perspiciatis dolorem, magnam sit obcaecati modi labore mollitia vero corrupti fuga quae ratione nobis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos minus, nostrum ipsa blanditiis deleniti repellat magni expedita repudiandae harum alias eaque distinctio dolores, beatae ipsum iste incidunt enim suscipit ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, dicta libero</p>
+					<h4 id="one">one</h4>
+					<p>ratione facilis harum vitae id magnam facere, cumque tempore voluptatum debitis ipsa quidem, adipisci. Voluptates officia suscipit eligendi cumque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, aliquid vel saepe aspernatur repellat rerum quos nobis voluptatem hic numquam laudantium ad nihil facilis cumque quas, ratione quibusdam eveniet unde.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos delectus facere laudantium quibusdam numquam, eum soluta perferendis hic, quaerat, laborum voluptatum. Repudiandae hic, corporis est quo ipsum dolor voluptatibus nobis.Lorem ipsum dolor sit amet,</p>
+					<h4 id="two">two</h4>
+					<p>consectetur adipisicing elit. Veritatis quibusdam, odit tempora provident unde, saepe odio dicta nobis. Pariatur dolor deserunt distinctio deleniti illum est, alias illo doloremque accusamus assumenda?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet deserunt soluta a voluptas veniam facere, rem asperiores odio cumque. Eos doloremque aut delectus explicabo id libero! Nemo, eos vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, laudantium, quaerat. Quasi repellendus, repellat in consequatur doloremque incidunt obcaecati! Hic recusandae voluptatum consectetur facilis nemo, amet odio assumenda, voluptatibus asperiores.</p>
+					<h4 id="three">three</h4>
+					<p>consectetur adipisicing elit. Veritatis quibusdam, odit tempora provident unde, saepe odio dicta nobis. Pariatur dolor deserunt distinctio deleniti illum est, alias illo doloremque accusamus assumenda?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet deserunt soluta a voluptas veniam facere, rem asperiores odio cumque. Eos doloremque aut delectus explicabo id libero! Nemo, eos vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, laudantium, quaerat. Quasi repellendus, repellat in consequatur doloremque incidunt obcaecati! Hic recusandae voluptatum consectetur facilis nemo, amet odio assumenda, voluptatibus asperiores.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<h3>Adaptivnoe video</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-items" src="https://www.youtube.com/embed/T-TYyGL9Qjg" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card ">
+					<div class="card-header">
+						<h5 class="card-title">name card</h5>
+					</div>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-items" src="https://www.youtube.com/embed/T-TYyGL9Qjg" allowfullscreen></iframe>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rerum enim dolor.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card text-center bg-warning text-white">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-items" src="https://www.youtube.com/embed/T-TYyGL9Qjg" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

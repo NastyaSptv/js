@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Canvas</title>
+	<title>LinearGradient</title>
 	<script src="Modernizr-2.0.6.js"></script>
 	<script>
 		function draw() {
@@ -11,22 +11,16 @@
 			var canvas = document.getElementById("canvas");
 			var context = canvas.getContext("2d");
 
-			context.save();
-			context.translate(100, 100);
+			var gradient = context.createLinearGradient(0, 0, 0, 300);
 
-			context.beginPath();
-			context.moveTo(0, 0);
-			context.lineTo(100, 0);
-			context.lineTo(100, 100);
-			context.lineTo(0, 100);
-			context.closePath();
+			gradient.addColorStop(0, "Blue");
 
-			context.lineWidth = 8;
-			context.strokeStyle = "green";
-			context.lineJoin = "bevel";
-			context.stroke();
+			gradient.addColorStop(0.5, "LightBlue");
 
-			context.restore();
+			gradient.addColorStop(1, "White");
+
+			context.fillStyle = gradient;
+			context.fillRect(0, 0, 300, 300);
 		}
 
 		if (window.addEventListener)

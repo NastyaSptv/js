@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Canvas</title>
-	<script src="Modernizr-2.0.6.js" type="text/javascript"></script>
+	<script src="Modernizr-2.0.6.js"></script>
 	<script>
 		function draw() {
 
@@ -11,11 +11,22 @@
 			var canvas = document.getElementById("canvas");
 			var context = canvas.getContext("2d");
 
-			context.beginPath();
-			context.moveTo(100, 100);
-			context.lineTo(200, 200);
+			context.save();
+			context.translate(100, 100);
 
+			context.beginPath();
+			context.moveTo(0, 0);
+			context.lineTo(100, 0);
+			context.lineTo(100, 100);
+			context.lineTo(0, 100);
+			context.closePath();
+
+			context.lineWidth = 8;
+			context.strokeStyle = "green";
+			context.lineJoin = "bevel";
 			context.stroke();
+
+			context.restore();
 		}
 
 		if (window.addEventListener)
